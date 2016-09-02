@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.guohangding.study</groupId>
+    <artifactId>dubbo_demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>api</module>
+        <module>consumer</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>dubbo_demo</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <org.springframework.version>3.1.4.RELEASE</org.springframework.version>
+
+        <guava.version>15.0</guava.version>
+        <org.slf4j.version>1.7.5</org.slf4j.version>
+        <logback.version>1.0.13</logback.version>
+        <dubbo.version>3.2.5</dubbo.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.qunar.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- common dependencies -->
+        <dependency>
+            <groupId>com.qunar.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
